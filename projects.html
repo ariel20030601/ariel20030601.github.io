@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ariel Kegeles: Software Engineer</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="project.css">
+
+</head>
+
+<body>
+    <header>
+      <a class="header-logo">ARIEL<span>.</span></a>
+      <nav>
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="projects.html">Portfolio</a>
+        <a class="nav-item" href="experience.html">Experience</a>
+        <a class="nav-item">About</a>
+      </nav>
+    </header>
+
+        <section>
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>Bike Renting Website</h3>
+            <ul>
+            <li>Solo full-stack project that enables user to rent and manage available bikes</li>
+            <li>Frontend made with Bootstrap 5 and Javascript, Backend with Python (Flask Framework)</li>
+            <li>Implemented SQL database management for data persistence using SQLAlchemy</li>
+            </ul>
+            <div class="catalog-flower-header">
+                <div class="flower-card flower-left">
+                    <img src="images/SS4.png" />
+                </div>
+                <div class="flower-card flower-top">
+                    <img src="images/SS5.png" />
+                </div>
+                <div class="flower-card flower-right">
+                    <img src="images/SS8.png" />
+                </div>
+            </div>
+            <div class="click-arrow">▲ Click to expand</div>
+            <div class="cta-section">
+                <a href="https://github.com/ariel20030601/Bike-Rent">
+                <button class="cta-1">Project
+                    <i class="fa-solid fa-code"></i>
+                </button>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Object-Oriented Programming Project</h3>
+            <ul>
+            <li>Developed Java and SQLite CRUD system for art piece management</li>
+            <li>Worked collaboratively in a team of 2 developers</li>
+            <li>Implemented comprehensive data management features</li>
+            </ul>
+            <div class="catalog-flower-header">
+                <div class="flower-card flower-left">
+                    <img src="images/DemoSS.png" />
+                </div>
+                <div class="flower-card flower-top">
+                    <img src="images/RelationalDataModel.png" />
+                </div>
+                <div class="flower-card flower-right">
+                    <img src="images/ClassDiagram.png" />
+                </div>
+            </div>
+            <div class="click-arrow">▲ Click to expand</div>
+            <div class="cta-section">
+                <a href="https://github.com/ariel20030601/Art-Instituiton" target="_blank">
+                <button class="cta-1">Project
+                    <i class="fa-solid fa-code"></i>
+                </button>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Movie Rating Website</h3>
+            <ul>
+            <li>Solo full-stack development project</li>
+            <li>Implemented user authentication (login and registration)</li>
+            <li>Created custom responsive UI with database integration</li>
+            </ul>
+            <div class="project-links">
+            </div>
+            <div class="catalog-flower-header">
+                <div class="flower-card flower-left">
+                    <img src="images/SS1.png" />
+                </div>
+                <div class="flower-card flower-top">
+                    <img src="images/SS11.png" />
+                </div>
+                <div class="flower-card flower-right">
+                    <img src="images/SS9.png" />
+                </div>
+            </div>
+            <div class="click-arrow">▲ Click to expand</div>
+            <div class="cta-section">
+                <a href="https://github.com/ariel20030601/Movie-Website" target="_blank">
+                <button class="cta-1">Project
+                    <i class="fa-solid fa-code"></i>
+                </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Wii Game Catalog</h3>
+            <ul>
+            <li>Solo Frontend web-based application built with React</li>
+            <li>Utilizes GameTDB API to retrieve cover art and local xml database for game information</li>
+            <li>Reponsive UI with optimized search engine using debouncing</li>
+            </ul>
+            <div class="project-links">
+            </div>
+            <div class="catalog-flower-header">
+                <div class="flower-card flower-left">
+                    <img src="images/SS1_Wii.png" />
+                </div>
+                <div class="flower-card flower-top">
+                    <img src="images/SS3_Wii.png" />
+                </div>
+                <div class="flower-card flower-right">
+                    <img src="images/SS7_Wii.png" />
+                </div>
+            </div>
+            <div class="click-arrow">▲ Click to expand</div>
+            <div class="cta-section">
+                <a href="https://github.com/ariel20030601/Wii-Catalog" target="_blank">
+                <button class="cta-1">Project
+                    <i class="fa-solid fa-code"></i>
+                </button>
+                </a>
+            </div>
+        </div>
+
+
+        
+        </section>
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll('.flower-card');
+
+            cards.forEach(card => {
+            card.addEventListener('click', () => {
+
+                if (card.classList.contains('expanded')) {
+                    card.classList.remove('expanded');
+                } else {
+                cards.forEach(c => c.classList.remove('expanded'));
+                card.classList.add('expanded');
+                }
+            });
+            });
+        });
+
+
+
+</script>
+</body>
+</html>
+    
