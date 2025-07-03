@@ -194,8 +194,8 @@ h2::after {
     top: 0;
     left: 0;
     transform: none;
-    width: 15vh;
-    height:8vh;
+    width:32vh;
+    height:20vh;
     margin-top: 1rem;
     z-index: 10;
   }
