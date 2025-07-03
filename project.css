@@ -179,7 +179,7 @@ h2::after {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .flower-card.expanded {
     position: relative;
     left: 0 !important;
